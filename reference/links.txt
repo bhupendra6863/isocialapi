@@ -1,0 +1,30 @@
+                    API
+ 
+     -    npm init 
+     -    install all dependencies  npm i 
+          nodemon morgan multer mongoose dotenv express helmet
+     -    database connection url
+     -    check for env file            
+     
+
+                CLIENT
+     -    npx create-react-app .
+     -    If react-scripts is present in package.json, then just type this command
+          npm install
+     -    If react-scripts is not present in package.json, then you probably haven't installed it. To do that, run:
+          npm install react-scripts --save
+     -    use react-router-dom v 5.2.0 (previous version)
+     -    By default app can access http://localhost:3000
+     -    Proxy http://localhost:8800/api
+     -    useParams , useRef
+     -    npm i socket.io-client
+
+
+
+
+
+                SOCKET IO
+     -    socket io cheatsheet link
+             https://socket.io/docs/v4/emit-cheatsheet 
+     -    npm install socket.io
+

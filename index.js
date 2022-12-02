@@ -65,5 +65,5 @@ if(process.env.NODE_ENV=="production"){
 }
 
 app.listen(PORT, () => {
-  console.log(`Backend server is running at ${PORT}`);
+  console.log(`Backend server is running at ${PORT}!`);
 });

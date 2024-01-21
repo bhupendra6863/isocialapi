@@ -8,11 +8,16 @@
      
 
                 CLIENT
+		w3 schools for React
+
      -    npx create-react-app .
      -    If react-scripts is present in package.json, then just type this command
           npm install
      -    If react-scripts is not present in package.json, then you probably haven't installed it. To do that, run:
           npm install react-scripts --save
+	  then npm audit fix --force
+     -    Warning | Error: ENOENT - Failed to parse source map | no such file or directory -  
+	       https://github.com/mebjas/html5-qrcode/issues/396
      -    use react-router-dom v 5.2.0 (previous version)
      -    By default app can access http://localhost:3000
      -    Proxy http://localhost:8800/api

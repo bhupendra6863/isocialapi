@@ -12,10 +12,17 @@ const conversationRoute = require("./routes/conversations");
 const messageRoute = require("./routes/messages");
 const router = express.Router();
 const path = require("path");
+const cors = require("cors");
 
 dotenv.config();
 
 const PORT = process.env.PORT || 5000
+const BASE_URL = process.env.BASE_URL
+
+app.use(cors({
+  origin:BASE_URL,
+  credentials:true
+}));
 
 mongoose.connect(process.env.MONGO_URL,
   { useNewUrlParser: true, 

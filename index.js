@@ -71,6 +71,18 @@ app.get("/api/test", async (req, res) => {
   }
 });
 
+app.get("/", async (req, res) => {
+  try {
+    res.json({routes : {
+      test: "/api/test",
+      auth: "/api/auth",
+      etc: "/api/..."
+    }});
+  } catch (err) {
+    res.status(500).json(err)
+  }
+});
+
 if(process.env.NODE_ENV=="production"){
   app.use(express.static("client/build"));
   const path = require("path");

@@ -63,6 +63,14 @@ app.use("/api/posts", postRoute);
 app.use("/api/conversations", conversationRoute);
 app.use("/api/messages", messageRoute);
 
+app.get("/api/test", async (req, res) => {
+  try {
+    res.send("Hi My name is Bhupendra Singh and this is isocialapi");
+  } catch (err) {
+    res.status(500).json(err)
+  }
+});
+
 if(process.env.NODE_ENV=="production"){
   app.use(express.static("client/build"));
   const path = require("path");
